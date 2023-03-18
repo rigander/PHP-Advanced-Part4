@@ -32,6 +32,20 @@ abstract class ShapeDecorator implements Shape{
     }
 }
 
+class RedShapeDecorator extends ShapeDecorator{
+             function __construct(Shape $decoratedShape){
+    parent::__construct($decoratedShape);
+    }
+    private function setRedBorder(){
+                 echo "Border color: red";
+    }
+    function draw(){
+        $this->decoratedShape->draw();
+        $this->setRedBorder();
+    }
+}
 
-
-
+$c = new Circle();
+$c->draw();
+$rc = new RedShapeDecorator(new Circle());
+$rc->draw();
