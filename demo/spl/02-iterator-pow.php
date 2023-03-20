@@ -32,6 +32,7 @@ class NumberPow implements Iterator{
   }
 //todo В методе valid() проверяем чтобы полученное число было меньше end.
 // В зависимости от этого принимается решение продолжать цикл или нет.
+// Valid всегда вернет булев тип.
   public function valid() {
         return $this->current <= $this->end;
   }
