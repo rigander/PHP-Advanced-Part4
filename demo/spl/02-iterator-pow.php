@@ -43,3 +43,5 @@ $values = new NumberPow(3, 7);
 foreach ($values as $key => $value) {
   print "The square of a number $key = $value\n<br>";
 }
+
+
