@@ -6,7 +6,7 @@ while($array = $file->fgetcsv()) {
 exit;
 
 // Кастомизируем чтение csv файла
-class CSVFileObject extends SPLFileInfo 
+class  CSVFileObject extends SPLFileInfo
                     implements Iterator, SeekableIterator {
   protected $map, $fp, $currentLine;
   
