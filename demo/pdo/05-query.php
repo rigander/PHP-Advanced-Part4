@@ -1,5 +1,5 @@
 <?php
-
+//todo Универсальный метод для sql запросов - выборки данных. query().
 $db = new PDO("sqlite:users.db");
 
 

@@ -1,11 +1,18 @@
 <?php
-
+//todo Периодически возникает проблема контроля приходящих на север строк.
+// То есть существует проблема безопасности, например при приходе поисковых
+// запросов или при вводе логина и пароля. Отфильтровать их практически невозможно.
+// Эту проблему решает метод quote().
+// Все что приходит проходит через quote() - Экранирование строки.
+// В каждой СУБД для этого есть свои методы, но при использовании PDO - Это будет
+// quote().
 $db = new PDO("sqlite:users.db");
 
 
 //INSERT
 $name = $db->quote('Mike');
 $email = $db->quote('mike@hotmail.com');
-$count = $db->exec("INSERT INTO user(name, email) VALUES ('$name', '$email')");
+$count = $db->exec("INSERT INTO user(name, email)
+ VALUES ('$name', '$email')");
 
 echo $count;
