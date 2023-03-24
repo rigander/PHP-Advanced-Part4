@@ -3,7 +3,7 @@ try {
   $db = new PDO("sqlite:users.db");
 
   echo 'Connected to database<br>';
-
+//todo ERRMODE_WARNING - хотим чтобы ты применил здесь warning.
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
   $sql = "SELECT username FROM user";
