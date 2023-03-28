@@ -9,9 +9,24 @@ function foo4() { }
 $reflect = new ReflectionFunction("foo1");
 
 echo $reflect;
+var_dump($reflect->getParameters());
+$parameters = $reflect->getParameters();
+print_r($parameters[0]);
+$parameter = $parameters[0];
+echo $parameter->getName();
 exit;
 
-
+//todo getName() — Получает название. Доступен только как метод объекта класса
+// getParameter, который в свою очередь создаётся только в массиве объектов
+// возвращаемых методом getParameters().
+// var_export() — Выводит или возвращает интерпретируемое
+// строковое представление переменной
+// ReflectionParameter::allowsNull — Проверяет, допустимо ли значение null
+// для параметра
+// ReflectionParameter::isPassedByReference — Проверяет, передан ли параметр
+// по ссылке
+// ReflectionParameter::isOptional — Проверяет, является ли аргумент
+// необязательным
 foreach ($reflect->getParameters() as $i => $param) {
     printf(
         "-- Параметр #%d: %s {\n".

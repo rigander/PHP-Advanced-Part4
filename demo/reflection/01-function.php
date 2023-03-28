@@ -5,7 +5,7 @@ function sayHello($name, $h){
   return "<h$h>Hello, $name</h$h>";
 }
 
-// Обзор функции
+// Обзор функции - устарело - не использовать.
 Reflection::export(new ReflectionFunction('sayHello'));
 exit;
 
