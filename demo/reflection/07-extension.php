@@ -1,6 +1,7 @@
 <pre>
 <?php
 // Создание экземпляра класса ReflectionProperty
+
 $ext = new ReflectionExtension('standard');
 
 // Вывод основной информации
