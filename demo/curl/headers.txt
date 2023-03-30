@@ -1,1 +1,9 @@
-.
+HTTP/1.1 200 OK
+Date: Thu, 30 Mar 2023 01:01:43 GMT
+Server: Apache/2.4.17 (Win32)
+Last-Modified: Tue, 29 Jun 2010 13:58:16 GMT
+ETag: "34-48a2ba0fcee00"
+Accept-Ranges: bytes
+Content-Length: 52
+Content-Type: text/plain
+
