@@ -1,7 +1,14 @@
 <?php
+//todo ziparchive - класс создающий Файловый архив, сжатый Zip.
   $zip = new ZipArchive();
   $filename = "test.zip";
-
+//todo ZipArchive::open — Открывает ZIP-архив.
+// Открывает новый или существующий ZIP-архив для чтения,
+// записи или изменения.
+// ZIPARCHIVE::CREATE - Создавать архив, если он не существует.
+// ZipArchive::addFromString — Добавляет файл в ZIP-архив,
+// используя его содержимое. То есть создай в архиве файл и запиши в него
+// следующую строчку.
   if ($zip->open($filename, ZIPARCHIVE::CREATE)!==TRUE) {
     exit("cannot open $filename\n");
   }
@@ -17,5 +24,5 @@
   $zip->addFile("test.txt","test-from-file.txt");
 
   $zip->close();
-
+//todo file_get_contents — Читает содержимое файла в строку
   echo file_get_contents($filename);
