@@ -1,1 +1,3 @@
 .idea
+./demo/phpunit/phpunit.phar
+composer.phar
