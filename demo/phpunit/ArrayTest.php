@@ -1,6 +1,7 @@
 <?php
 // Тестирование операций с массивами PHP при с использованием PHPUnit
-class ArrayTest extends PHPUnit_Framework_TestCase{
+use PHPUnit\Framework\TestCase;
+class ArrayTest extends TestCase{
 
   public function testCondition(){
 
