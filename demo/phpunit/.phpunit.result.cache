@@ -1,1 +1,1 @@
-{"version":1,"defects":{"ArrayTest::testCondition":7},"times":{"ArrayTest::testCondition":0}}
+{"version":1,"defects":{"ArrayTest::testCondition":7,"StackTest::testPop":8},"times":{"ArrayTest::testCondition":0,"StackTest::testEmpty":0,"StackTest::testPush":0,"StackTest::testPop":0}}

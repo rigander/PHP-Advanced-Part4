@@ -1,6 +1,6 @@
 <?php
 // Использование разных методов
-class StackTest extends PHPUnit_Framework_TestCase{
+class StackTest extends PHPUnit\Framework\TestCase{
 
   public function testEmpty(){
     $arr = [];
